@@ -1,0 +1,14 @@
+.textStyle{
+		height:40px;
+		background:#D9D9F3;
+		margin-top:-15px;
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+.textFigure{
+		position:relative;
+		left:810px;
+		line-height:40px;
+		font-size:17px;
+		font-family:'Î¢ÈíÑÅºÚ';
+}

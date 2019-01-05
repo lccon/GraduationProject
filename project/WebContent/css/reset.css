@@ -1,0 +1,40 @@
+﻿body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,th,td {margin: 0;padding: 0;}
+body,button,input,select,textarea {font: 12px "microsoft yahei"; color:#333;}
+h1 { font-size: 18px;}
+h2 { font-size: 16px;}
+h3 { font-size: 14px;}
+h4,h5,h6 { font-size: 100%;}
+ul,ol { list-style: none;}
+a { color:#3366cc; text-decoration: none;}
+a:hover { color:#37579e; text-decoration:none;}
+img { border:0 none; vertical-align:middle;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+input{vertical-align:middle;}
+html { overflow-y: scroll;}
+a,input,button{ outline:none; }
+
+header, nav, section, article, aside, footer { display: block;}
+
+.cf:before, .cf:after {content:"";display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
+.clear{width:0;height:0;clear:both;overflow:hidden;}
+em, i, b {
+  font-style: normal;
+  font-weight: normal;
+}
+button, select, input {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'microsoft yahei';
+}
+input[type='hidden'],.hidden {
+  display: none;
+}

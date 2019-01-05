@@ -1,0 +1,249 @@
+/* tip-default */
+.tip-default {
+	z-index: 99999;
+	text-align: left;
+	border: 1px solid #e3e2e2;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 3px;
+	max-width: 300px;
+	color: #333;
+	background: #fdfdfd;
+}
+.tip-default .tip-inner {
+	font: 12px/16px arial, helvetica, sans-serif;
+}
+.tip-default .tip-arrow-top {
+	margin-top: -6px;
+	margin-left: -5px;
+	top: 0;
+	left: 50%;
+	width: 9px;
+	height: 6px;
+	background: url(../images/tipDefault.png) no-repeat;
+}
+.tip-default .tip-arrow-right {
+	margin-top: -4px;
+	margin-left: 0;
+	top: 50%;
+	left: 100%;
+	width: 6px;
+	height: 9px;
+	background: url(../images/tipDefault.png) no-repeat -9px 0;
+}
+.tip-default .tip-arrow-bottom {
+	margin-top: 0;
+	margin-left: -5px;
+	top: 100%;
+	left: 50%;
+	width: 9px;
+	height: 6px;
+	background: url(../images/tipDefault.png) no-repeat -18px 0;
+}
+.tip-default .tip-arrow-left {
+	margin-top: -4px;
+	margin-left: -6px;
+	top: 50%;
+	left: 0;
+	width: 6px;
+	height: 9px;
+	background: url(../images/tipDefault.png) no-repeat -27px 0;
+}
+/* tip-yellowsimple */
+.tip-yellowsimple {
+	z-index: 99999;
+	text-align: left;
+	border: 1px solid #FFCC7F;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 3px;
+	max-width: 300px;
+	color: #333;
+	background-color: #FFFFE5;
+}
+.tip-yellowsimple .tip-inner {
+	font: 12px/16px arial, helvetica, sans-serif;
+}
+.tip-yellowsimple .tip-arrow-top {
+	margin-top: -6px;
+	margin-left: -5px;
+	top: 0;
+	left: 50%;
+	width: 9px;
+	height: 6px;
+	background: url(../images/tip-yellowsimple_arrows.gif) no-repeat;
+}
+.tip-yellowsimple .tip-arrow-right {
+	margin-top: -4px;
+	margin-left: 0;
+	top: 50%;
+	left: 100%;
+	width: 6px;
+	height: 9px;
+	background: url(../images/tip-yellowsimple_arrows.gif) no-repeat -9px 0;
+}
+.tip-yellowsimple .tip-arrow-bottom {
+	margin-top: 0;
+	margin-left: -5px;
+	top: 100%;
+	left: 50%;
+	width: 9px;
+	height: 6px;
+	background: url(../images/tip-yellowsimple_arrows.gif) no-repeat -18px 0;
+}
+.tip-yellowsimple .tip-arrow-left {
+	margin-top: -4px;
+	margin-left: -6px;
+	top: 50%;
+	left: 0;
+	width: 6px;
+	height: 9px;
+	background: url(../images/tip-yellowsimple_arrows.gif) no-repeat -27px 0;
+}
+/* tip-error */
+.tip-error {
+	z-index: 99999;
+	text-align: left;
+	border: 1px solid #ff7a38;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	padding: 3px;
+	max-width: 300px;
+	color: #d64600;
+	background-color: #fff6f1;
+}
+.tip-error .tip-inner {
+	font: 12px/16px arial, helvetica, sans-serif;
+}
+.tip-error .tip-arrow-top {
+	margin-top: -6px;
+	margin-left: -5px;
+	top: 0;
+	left: 50%;
+	width: 9px;
+	height: 6px;
+	background: url(../images/login/tip-error_arrows.gif) no-repeat;
+}
+.tip-error .tip-arrow-right {
+	margin-top: -4px;
+	margin-left: 0;
+	top: 50%;
+	left: 100%;
+	width: 6px;
+	height: 9px;
+	background: url(../images/login/tip-error_arrows.gif) no-repeat -9px 0;
+}
+.tip-error .tip-arrow-bottom {
+	margin-top: 0;
+	margin-left: -5px;
+	top: 100%;
+	left: 50%;
+	width: 9px;
+	height: 6px;
+	background: url(../images/login/tip-error_arrows.gif) no-repeat -18px 0;
+}
+.tip-error .tip-arrow-left {
+	margin-top: -4px;
+	margin-left: -6px;
+	top: 50%;
+	left: 0;
+	width: 6px;
+	height: 9px;
+	background: url(../images/login/tip-error_arrows.gif) no-repeat -27px 0;
+}
+.errorInput {
+	background: #fee;
+	border: 1px solid #ff7a38 !important;
+}
+div.redSign.errorInput {
+	border: 0!important;
+	background: none;
+	color: #f00;
+}
+div.redSign.errorInput select {
+	color: #f00;
+}
+/* jGrowl */
+/* jGrowl */
+.jGrowl {
+	z-index: 9999;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -125px;
+	min-width: 160px;
+	max-width:260px;
+	min-height: 42px;
+	height: auto !important;
+	height: 42px;
+	overflow: hidden;
+	border-radius:5px;
+}
+.jGrowl .info, .jGrowl .error, .jGrowl .success, .jGrowl .warn {
+	color: #fff;
+	font:bold 14px '宋体';
+	line-height: 20px;
+	padding:10px;
+}
+.jGrowl .info,.jGrowl .success{
+	background-color:#a0d468;
+}
+.jGrowl .error{
+	background-color:#ed5565;
+}
+.jGrowl .warn{
+	background-color:#e87e00;
+}
+.jGrowl span {
+	margin-right: 5px;
+	background: url(../images/jGrowl.png) no-repeat;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align: middle;
+}
+.jGrowl .success span ,.jGrowl .info span{
+	background-position: 0 0;
+}
+.jGrowl .error span {
+	background-position: 0 -23px;
+}
+.jGrowl .warn span {
+	background-position: 0 -45px
+}
+
+
+#msgBox {
+	position: fixed;
+	top: 43px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 1121;
+}
+.msg {
+	width: 250px;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	white-space: nowrap;
+	color: #fff;
+	height: 40px;
+	line-height: 38px;
+	border-radius: 3px;
+	background: #68af02;
+	z-index: 99;
+}
+.errmsg {
+	background: #ef8f00;
+	z-index: 99;
+}
+.msg a, .msg a:link, .msg a:visited, .msg a:active, .msg a:hover, .errmsg a, .errmsg a:link, .errmsg a:visited, .errmsg a:active, .errmsg a:hover {
+	color: #fff;
+}

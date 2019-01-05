@@ -1,0 +1,31 @@
+.text {
+	color: #333;
+	overflow: hidden;
+	/* border: 1px solid #ccc; */
+	box-sizing:border-box;
+	padding:15px;
+	height:100%;
+}
+
+.text .t-content {
+	text-indent: 2em;
+	line-height: 30px;
+	font-size: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 5px;
+	overflow: hidden;
+}
+.section .aritcle{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    float: left;
+    flex: 1;
+    border: 1px solid #ccc;
+    min-height:800px; 
+    height:100%;
+    background-color:white;
+}
+.slide .left{
+width:20%;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.project.domain">
+	<class name="InsideNews" table="insidenews">
+		<id name="nid" column="nid">
+			<generator class="native"/>
+		</id>
+		<property name="newsContent" column="newscontent" length="100"/>
+	</class>
+</hibernate-mapping>

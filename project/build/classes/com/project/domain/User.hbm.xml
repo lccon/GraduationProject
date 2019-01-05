@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.project.domain">
+	<class name="User" table="user">
+		<id name="uid">
+			<generator class="native"/>
+		</id>
+		<property name="name" length="20"/>
+		<property name="sex" length="20"/>
+		<property name="data" column="birthday"/>
+		<property name="certificates" length="20"/>
+		<property name="idenNumber" length="30"/>
+		<property name="phone" length="20"/>
+		<property name="work" length="100"/>
+		<property name="department" length="100"/>
+		<property name="post" length="50"/>
+		<property name="title" length="50"/>
+		<property name="highEducation" length="50"/>
+		<property name="major" length="50"/>
+		<property name="goodDirection" length="50"/>
+		<!-- <property name="licensingFileName" length="50"/>
+		<property name="titleCertificateFileName" length="50"/> -->
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.project.domain">
+	<class name="CategorySecond" table="categorysecond">
+		<id name="csid" column="csid">
+			<generator class="native"/>
+		</id>
+		<property name="csname" length="50"/>
+		<many-to-one name="category" lazy="false" class="com.project.domain.Category" column="cid"/>
+		<set name="pageInfo" lazy="false" cascade="delete">
+			<key column="csid"/>
+			<one-to-many class="com.project.domain.PageInfo"/>
+		</set>
+	</class>
+
+</hibernate-mapping>

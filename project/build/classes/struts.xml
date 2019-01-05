@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.url.includeParams" value="none" />
+	<constant name="struts.ui.theme" value="simple" />
+	<package name="member" namespace="/member" extends="json-default">
+	
+		<action name="gotoListPage" class="com.project.adminUser.member.action.MemberAction" method="gotoListPage">  
+	        <result name="memeberList">/member/memberList.jsp</result>  
+	        <result name="input">/welcome2.jsp</result>
+	    </action>
+	
+		<action name="findMemberForList" class="com.project.adminUser.member.action.MemberAction" method="findMemberForList">  
+	        <result name="success" type="json">  
+	            <param name="includeProperties">  
+	             ^gridModel\[\d+\]\.\w+,
+	             rows, page, total, record
+	            </param>  
+	            <param name="noCache">true</param>  
+	            <param name="ignoreHierarchy">false</param>
+	        </result>  
+	    </action> 
+	    
+	    <action name="deleteMemberForIds" class="com.project.adminUser.member.action.MemberAction" method="deleteMemberForIds">  
+	        <result name="deleteSuccess">/member/memberList.jsp</result>  
+	    </action> 
+	    
+	    <action name="showMemberDlg" class="com.project.adminUser.member.action.MemberAction" method="showMemberDlg">  
+	        <result name="selectSuccess">/member/viewMemberDlg.jsp</result>  
+	    </action>
+	    
+	    <action name="editMemberDlg" class="com.project.adminUser.member.action.MemberAction" method="editMemberDlg">  
+	        <result name="editSuccess">/member/editMemberDlg.jsp</result>  
+	    </action>
+	 </package>
+	 
+	 <package name="category" namespace="/category" extends="json-default">
+	 	<action name="gotoListPage" class="com.project.adminUser.category.action.CategoryAction" method="gotoListPage">  
+	        <result name="categoryList">/category/categoryList.jsp</result>  
+	        <result name="input">/welcome2.jsp</result>
+	    </action>
+	
+		<action name="findCategoryForList" class="com.project.adminUser.category.action.CategoryAction" method="findCategoryForList">  
+	        <result name="success" type="json">  
+	            <param name="includeProperties">  
+	             ^gridModel\[\d+\]\.\w+,
+	             rows, page, total, record
+	            </param>  
+	            <param name="noCache">true</param>  
+	            <param name="ignoreHierarchy">false</param>
+	        </result>  
+	    </action>
+	    
+	    <action name="editCategoryDlg" class="com.project.adminUser.category.action.CategoryAction" method="editCategoryDlg">  
+	        <result name="editSuccess">/category/editCategoryDlg.jsp</result>  
+	    </action>
+	    
+	    <action name="addCategoryDlg" class="com.project.adminUser.category.action.CategoryAction" method="addCategoryDlg">  
+	        <result name="addSuccess">/category/addCategoryDlg.jsp</result>  
+	    </action>
+	    
+	    <action name="deleteCategoryForIds" class="com.project.adminUser.category.action.CategoryAction" method="deleteCategoryForIds">  
+	        <result name="deleteSuccess">/category/categoryList.jsp</result>  
+	    </action>
+	    
+	 </package>
+	 
+	 <package name="categorySecond" namespace="/categorySecond" extends="json-default">
+	 	<action name="gotoListPage" class="com.project.adminUser.categorySecond.action.CategorySecondAction" method="gotoListPage">  
+	        <result name="categorySecondList">/categorySecond/categorySecondList.jsp</result>  
+	        <result name="input">/welcome2.jsp</result>
+	    </action>
+	
+		<action name="findCategorySecondForList" class="com.project.adminUser.categorySecond.action.CategorySecondAction" method="findCategorySecondForList">  
+	        <result name="success" type="json">  
+	            <param name="includeProperties">  
+	             ^gridModel\[\d+\]\.\w+,
+	             rows, page, total, record
+	            </param>  
+	            <param name="noCache">true</param>  
+	            <param name="ignoreHierarchy">false</param>
+	        </result>  
+	    </action>
+	    
+	    <action name="addCategorySecondDlg" class="com.project.adminUser.categorySecond.action.CategorySecondAction" method="addCategorySecondDlg">  
+	        <result name="addSuccess">/categorySecond/addCategorySecondDlg.jsp</result>  
+	    </action>
+	    
+	    <action name="deleteCategorySecondForIds" class="com.project.adminUser.categorySecond.action.CategorySecondAction" method="deleteCategorySecondForIds">  
+	        <result name="deleteSuccess">/category/categoryList.jsp</result>  
+	    </action>
+	    
+	 </package>
+	 
+	 <package name="announcement" namespace="/announcement" extends="json-default">
+	 	<action name="gotoListPage" class="com.project.adminUser.announcement.action.AnnouncementAction" method="gotoListPage">  
+	        <result name="announcementList">/announcement/announcementList.jsp</result>  
+	        <result name="input">/welcome2.jsp</result>
+	    </action>
+	
+		<action name="findAnnouncementForList" class="com.project.adminUser.announcement.action.AnnouncementAction" method="findAnnouncementForList">  
+	        <result name="success" type="json">  
+	            <param name="includeProperties">  
+	             ^gridModel\[\d+\]\.\w+,
+	             rows, page, total, record
+	            </param>  
+	            <param name="noCache">true</param>  
+	            <param name="ignoreHierarchy">false</param>
+	        </result>  
+	    </action>
+	    
+	     <action name="deleteAnnouncementForIds" class="com.project.adminUser.announcement.action.AnnouncementAction" method="deleteAnnouncementForIds">  
+	        <result name="deleteSuccess">/category/categoryList.jsp</result>  
+	     </action>
+	    
+	    <!-- <action name="addCategorySecondDlg" class="com.project.adminUser.categorySecond.action.CategorySecondAction" method="addCategorySecondDlg">  
+	        <result name="addSuccess">/categorySecond/addCategorySecondDlg.jsp</result>  
+	    </action>
+	    
+	    -->
+	    
+	 </package>
+	 
+	  <package name="acad" namespace="/acad" extends="json-default">
+	 	<action name="gotoListPage" class="com.project.adminUser.acad.action.AcadAction" method="gotoListPage">  
+	        <result name="acadList">/acad/acadList.jsp</result>  
+	        <result name="input">/welcome2.jsp</result>
+	    </action>
+	
+		<action name="findAcadForList" class="com.project.adminUser.acad.action.AcadAction" method="findAcadForList">  
+	        <result name="success" type="json">  
+	            <param name="includeProperties">  
+	             ^gridModel\[\d+\]\.\w+,
+	             rows, page, total, record
+	            </param>  
+	            <param name="noCache">true</param>  
+	            <param name="ignoreHierarchy">false</param>
+	        </result>  
+	    </action>
+	    
+	     <action name="deleteacadForIds" class="com.project.adminUser.acad.action.AcadAction" method="deleteacadForIds">  
+	        <result name="deleteSuccess">/category/categoryList.jsp</result>  
+	     </action>
+	    
+	 </package>
+	 
+	  <package name="industry" namespace="/industry" extends="json-default">
+	 	<action name="gotoListPage" class="com.project.adminUser.industry.action.IndustryAction" method="gotoListPage">  
+	        <result name="industryList">/industry/industryList.jsp</result>  
+	        <result name="input">/welcome2.jsp</result>
+	    </action>
+	
+		<action name="findIndustryForList" class="com.project.adminUser.industry.action.IndustryAction" method="findIndustryForList">  
+	        <result name="success" type="json">  
+	            <param name="includeProperties">  
+	             ^gridModel\[\d+\]\.\w+,
+	             rows, page, total, record
+	            </param>  
+	            <param name="noCache">true</param>  
+	            <param name="ignoreHierarchy">false</param>
+	        </result>  
+	    </action>
+	    
+	     <action name="deleteIndustryForIds" class="com.project.adminUser.industry.action.IndustryAction" method="deleteIndustryForIds">  
+	        <result name="deleteSuccess">/industry/categoryList.jsp</result>  
+	     </action>
+	    
+	 </package>
+</struts>
+ 
